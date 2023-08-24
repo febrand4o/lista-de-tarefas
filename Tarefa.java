@@ -12,7 +12,7 @@ public class Tarefa{
         System.out.printf("Digite o prazo\nDia: ");
         dia = scan.nextInt();
         System.out.println("Mes: ");
-        mes = scan.nextInt();
+        mes = scan.nextInt(); 
     }
 
     //getters
