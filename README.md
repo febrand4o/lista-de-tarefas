@@ -12,12 +12,21 @@ Este é um programa simples em Java para gerenciar uma lista de tarefas.
 
 ## Exemplo de uso
 1 - Adicionar tarefa
+
 2 - Excluir tarefa
+
 3 - Listar tarefas
+
 0 - sair
+
 Digite a opcao desejada:
+
 1
+
 Digite o titulo da tarefa: 
+
 Finalizar o projeto
+
 Digite a data de entrega (dd/MM): 01/09
+
 Tarefa adicionada!
