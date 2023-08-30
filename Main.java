@@ -1,6 +1,20 @@
 import java.util.Scanner;
+import java.time.MonthDay;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
+
 
 public class Main {
+
+    public static boolean dataValida(String data){
+        try{
+            MonthDay.parse(data, DateTimeFormatter.ofPattern("dd/MM"));
+            return true;
+        }
+        catch(DateTimeParseException ex){
+            return false;
+        }
+    }
     public static void main(String [] args){
         Scanner scan = new Scanner(System.in);
         boolean sair = false;
@@ -16,8 +30,13 @@ public class Main {
                 switch(op){
                     case 1:
                         Tarefa tarefa = new Tarefa();
+                        if(dataValida(tarefa.getData())){
                         lista.adiciona(tarefa);
                         System.out.println("Tarefa adicionada!");
+                        }
+                        else{
+                            System.out.println("Data inválida");
+                        }
                         break;
                     case 2:
                         try{
@@ -41,7 +60,7 @@ public class Main {
                 }
             }
             catch(java.util.InputMismatchException ex){
-                System.out.println("Algo deu errado! Certifique-se que os valores numericos que voce inseriu sao inteiros.");
+                System.out.println("Algo deu errado! Tente novamente.");
                 scan.nextLine();
             }
         }

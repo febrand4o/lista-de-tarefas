@@ -1,40 +1,35 @@
 import java.util.Scanner;
+import java.time.MonthDay;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 
 public class Tarefa{
     private String titulo;
-    private int dia;
-    private int mes;
+    String data;
     Scanner scan = new Scanner(System.in);
 
     public Tarefa(){
         System.out.println("Digite o titulo da tarefa: ");
         titulo = scan.nextLine();
-        System.out.printf("Digite o prazo\nDia: ");
-        dia = scan.nextInt();
-        System.out.println("Mes: ");
-        mes = scan.nextInt(); 
+        System.out.printf("Digite a data de entrega (dd/MM): ");
+        data = scan.nextLine();
+
     }
 
     //getters
     public String getTitulo() {
         return titulo;
     }
-    public int getDia() {
-        return dia;
-    }
-    public int getMes() {
-        return mes;
+    public String getData() {
+        return data;
     }
 
     //setters
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
-    public void setDia(int dia) {
-        this.dia = dia;
-    }
-    public void setMes(int mes) {
-        this.mes = mes;
+    public void setDia(String data) {
+        this.data = data;
     }
 
 }
