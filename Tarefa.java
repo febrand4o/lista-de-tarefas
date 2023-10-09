@@ -1,7 +1,4 @@
 import java.util.Scanner;
-import java.time.MonthDay;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
 
 public class Tarefa{
     private String titulo;

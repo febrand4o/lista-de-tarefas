@@ -24,7 +24,7 @@ public class Main {
 
         while(!sair){
             try{
-                System.out.println("\n1 - Adicionar tarefa\n2 - Excluir tarefa\n3 - Listar tarefas\n0 - sair");
+                System.out.println("\n1 - Adicionar tarefa\n2 - Excluir tarefa\n3 - Listar tarefas\n0 - sair\nDigite a opcao desejada:");
                 op = scan.nextInt();
             
                 switch(op){

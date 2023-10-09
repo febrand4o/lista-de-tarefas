@@ -18,7 +18,7 @@ public class ListaDeTarefas {
     public void imprime(){
         System.out.println("\nLista de tarefas");
         for(int i=0; i<lista.size(); i++){
-            System.out.printf("%d - " + lista.get(i).getTitulo() + " (%s)\n", i, lista.get(i).getData());
+            System.out.printf("%d - " + lista.get(i).getTitulo() + " (%s)\n", i+1, lista.get(i).getData());
         }
     }
 }
