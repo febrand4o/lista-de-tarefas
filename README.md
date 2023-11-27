@@ -1,5 +1,5 @@
 # Lista de tarefas
-Este é um programa simples em Java para gerenciar uma lista de tarefas.
+Este é um programa em Java para gerenciar uma lista de tarefas.
 
 ## Funcionalidades
 - Adicionar tarefas com título e data de entrega
