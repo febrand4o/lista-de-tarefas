@@ -1,5 +1,6 @@
 import  java.util.ArrayList;
 
+// Representa uma lista de tarefas usando um ArrayList de objetos Tarefa
 public class ListaDeTarefas {
     private ArrayList<Tarefa> lista;
 
